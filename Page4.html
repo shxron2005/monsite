@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essai</title>
+    <!-- Lien vers Bootstrap -->
+      <link rel="stylesheet" href="css/style.css">
+  
+    <style>
+        /* Styles personnalisés */
+        .cercle {
+            list-style-type: circle;
+        }
+
+        .carre {
+            list-style-type: square;
+        }
+
+        .rien {
+            list-style-type: none;
+        }
+
+        .commence_a_zero {
+            list-style-type: decimal-leading-zero;
+        }
+
+        .lettres_minuscules {
+            list-style-type: lower-alpha;
+        }
+
+        .chiffres_romains {
+            list-style-type: upper-roman;
+        }
+
+        .lettres_grecques {
+            list-style-type: lower-greek;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Quelques listes</h1>
+
+        <!-- Listes non ordonnées -->
+        <section class="mb-5">
+            <h2>Listes non ordonnées</h2>
+
+            <div class="mb-3">
+                <p>Voici une liste à puce non ordonnée sans modification (<em>disc</em>) :</p>
+                <ul class="list-unstyled">
+                    <li>Liste</li>
+                    <li>à</li>
+                    <li>puces</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <p>Avec <em>circle</em> :</p>
+                <ul class="cercle">
+                    <li>Liste</li>
+                    <li>à</li>
+                    <li>puces</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <p>Avec <em>square</em> :</p>
+                <ul class="carre">
+                    <li>Liste</li>
+                    <li>à</li>
+                    <li>puces</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <p>Avec <em>none</em> (sans puces) :</p>
+                <ul class="rien">
+                    <li>Liste</li>
+                    <li>à</li>
+                    <li>puces</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Listes ordonnées -->
+        <section>
+            <h2>Listes ordonnées</h2>
+
+            <div class="mb-3">
+                <p>Liste ordonnée sans modification (<em>decimal</em>) :</p>
+                <ol>
+                    <li>Un</li>
+                    <li>Deux</li>
+                    <li>Trois</li>
+                    <li>Quatre</li>
+                </ol>
+            </div>
+
+            <div class="mb-3">
+                <p>Avec <em>decimal-leading-zero</em> (ne fonctionne pas sous IE) :</p>
+                <ol class="commence_a_zero">
+                    <li>Un</li>
+                    <li>Deux</li>
+                    <li>Trois</li>
+                    <li>Quatre</li>
+                </ol>
+            </div>
+
+            <div class="mb-3">
+                <p>Avec <em>lower-alpha</em> :</p>
+                <ol class="lettres_minuscules">
+                    <li>Un</li>
+                    <li>Deux</li>
+                    <li>Trois</li>
+                    <li>Quatre</li>
+                </ol>
+            </div>
+
+            <div class="mb-3">
+                <p>Avec <em>upper-roman</em> :</p>
+                <ol class="chiffres_romains">
+                    <li>Un</li>
+                    <li>Deux</li>
+                    <li>Trois</li>
+                    <li>Quatre</li>
+                </ol>
+            </div>
+
+            <div class="mb-3">
+                <p>Avec <em>lower-greek</em> (ne fonctionne pas sous IE) :</p>
+                <ol class="lettres_grecques">
+                    <li>Un</li>
+                    <li>Deux</li>
+                    <li>Trois</li>
+                    <li>Quatre</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+
+    <!-- Lien vers les scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
